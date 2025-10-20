@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sample_rates">
+        <item>22050 Hz (Low)</item>
+        <item>44100 Hz (CD Quality)</item>
+        <item>48000 Hz (Studio)</item>
+    </string-array>
+
+    <string-array name="sample_rate_values">
+        <item>22050</item>
+        <item>44100</item>
+        <item>48000</item>
+    </string-array>
+
+    <string-array name="bitrates">
+        <item>96 kbps</item>
+        <item>128 kbps</item>
+        <item>192 kbps (Recommended)</item>
+        <item>256 kbps</item>
+        <item>320 kbps</item>
+    </string-array>
+
+    <string-array name="bitrate_values">
+        <item>96</item>
+        <item>128</item>
+        <item>192</item>
+        <item>256</item>
+        <item>320</item>
+    </string-array>
+</resources>

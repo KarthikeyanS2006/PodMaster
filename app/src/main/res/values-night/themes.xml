@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme - Black & Gray with Orange Accents -->
+    <style name="Base.Theme.PodMaster" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary Orange (Brighter for dark) -->
+        <item name="colorPrimary">@color/orange_accent</item>
+        <item name="colorPrimaryVariant">@color/orange_primary_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary Orange -->
+        <item name="colorSecondary">@color/orange_accent_light</item>
+        <item name="colorSecondaryVariant">@color/orange_accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Background & Surface (Dark) -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+
+        <!-- Error -->
+        <item name="colorError">#EF5350</item>
+        <item name="colorOnError">@color/black</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor">@color/background_light</item>
+    </style>
+
+    <style name="Theme.PodMaster" parent="Base.Theme.PodMaster" />
+</resources>

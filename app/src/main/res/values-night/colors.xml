@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Orange Colors (Darker in dark mode) -->
+    <color name="orange_primary">#FF9800</color>
+    <color name="orange_primary_dark">#F57C00</color>
+    <color name="orange_primary_light">#FFB74D</color>
+
+    <!-- Accent Colors (Brighter in dark mode) -->
+    <color name="orange_accent">#FFB74D</color>
+    <color name="orange_accent_light">#FFCC80</color>
+
+    <!-- Background Colors (Dark Mode) -->
+    <color name="background_light">#121212</color>
+    <color name="surface_light">#1E1E1E</color>
+    <color name="card_background_light">#2C2C2C</color>
+
+    <!-- Text Colors (Dark Mode) -->
+    <color name="text_primary_light">#FFFFFF</color>
+    <color name="text_secondary_light">#B0B0B0</color>
+
+    <!-- Legacy Purple (Dark mode versions) -->
+    <color name="purple_500">#FF9800</color>
+    <color name="purple_700">#FFB74D</color>
+    <color name="purple_100">#3E2723</color>
+    <color name="teal_200">#FFB74D</color>
+    <color name="teal_700">#FFA726</color>
+</resources>

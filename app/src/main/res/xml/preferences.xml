@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Audio Quality"
+        android:key="audio_quality">
+
+        <ListPreference
+            android:key="sample_rate"
+            android:title="Sample Rate"
+            android:entries="@array/sample_rates"
+            android:entryValues="@array/sample_rate_values"
+            android:defaultValue="44100"
+            android:summary="%s Hz" />
+
+        <ListPreference
+            android:key="bitrate"
+            android:title="Bitrate"
+            android:entries="@array/bitrates"
+            android:entryValues="@array/bitrate_values"
+            android:defaultValue="192"
+            android:summary="%s kbps" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Processing"
+        android:key="processing">
+
+        <SwitchPreferenceCompat
+            android:key="noise_reduction"
+            android:title="Noise Reduction"
+            android:summary="Remove background noise"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="breath_removal"
+            android:title="Breath Removal"
+            android:summary="Remove breathing sounds"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="de_esser"
+            android:title="De-esser"
+            android:summary="Reduce harsh S sounds"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="compression"
+            android:title="Compression"
+            android:summary="Even out volume levels"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
