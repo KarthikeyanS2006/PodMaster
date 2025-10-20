@@ -1,0 +1,82 @@
+# Privacy Policy for PodMaster
+
+**Last Updated: October 20, 2025**
+
+## Introduction
+
+PodMaster ("we", "our", or "us") respects your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.
+
+## Information We Collect
+
+### Information You Provide
+- **Audio Recordings**: Audio files you record are stored locally on your device only.
+- **File Names**: Names you give to your recordings.
+
+### Automatically Collected Information
+- **Device Information**: We do NOT collect device information.
+- **Usage Data**: We do NOT collect analytics or usage data.
+- **Location Data**: We do NOT access your location.
+
+## How We Use Your Information
+
+- **Audio Processing**: Your recordings are processed entirely on your device.
+- **Storage**: All audio files are stored locally on your device storage.
+- **No Cloud Upload**: We do NOT upload your recordings to any server.
+
+## Data Storage
+
+- All recordings are stored in your device's local storage.
+- You have full control to delete recordings at any time.
+- Uninstalling the app will delete all stored recordings.
+
+## Third-Party Services
+
+PodMaster does NOT use any third-party services, analytics, or advertising networks.
+
+## Permissions We Request
+
+### Required Permissions:
+- **RECORD_AUDIO**: To record your voice and podcasts.
+- **WRITE_EXTERNAL_STORAGE**: To save recordings to your device (Android 12 and below).
+- **READ_EXTERNAL_STORAGE**: To access and play your recordings (Android 12 and below).
+- **READ_MEDIA_AUDIO**: To access audio files (Android 13+).
+
+### Optional Permissions:
+- **INTERNET**: Only used if you choose to manually upload recordings to third-party platforms (Spotify, YouTube) via your browser.
+
+## Your Rights
+
+You have the right to:
+- Access your recordings at any time
+- Delete any or all recordings
+- Export recordings to other devices
+- Uninstall the app and remove all data
+
+## Children's Privacy
+
+PodMaster does not collect any personal information from anyone, including children under 13.
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of changes by updating the "Last Updated" date.
+
+## Data Security
+
+- All data is stored locally on your device
+- We do not transmit data to external servers
+- Your recordings remain private and under your control
+
+## Contact Us
+
+If you have questions about this Privacy Policy, contact us at:
+- **Email**: [your-email@example.com]
+- **GitHub**: https://github.com/[your-username]/PodMaster
+
+## Consent
+
+By using PodMaster, you consent to this Privacy Policy.
+
+---
+
+**PodMaster - Professional Podcast Studio**
+Version 1.0 | Made in India 🇮🇳
