@@ -1,35 +1,77 @@
-// File: YouTubeUploader.kt
-package com.podmaster.upload
+package com.podmaster
 
 import android.content.Context
-import android.content.Intent
-import android.net.Uri
-import androidx.core.content.FileProvider
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
+import android.util.AttributeSet
+import android.view.View
+import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential
+import com.google.api.services.youtube.YouTube
 import java.io.File
 
-class YouTubeUploader(private val context: Context) {
-
-    fun uploadToYouTube(audioFile: File, title: String) {
-        val uri = FileProvider.getUriForFile(
-            context,
-            "com.podmaster.provider",
-            audioFile
-        )
-
-        val shareIntent = Intent(Intent.ACTION_SEND).apply {
-            type = "audio/*"
-            putExtra(Intent.EXTRA_STREAM, uri)
-            putExtra(Intent.EXTRA_SUBJECT, title)
-            putExtra(Intent.EXTRA_TEXT, "Podcast episode: $title")
-            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            setPackage("com.google.android.apps.youtube.creator")
+class WaveformView @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
+    
+    private val paint = Paint().apply {
+        color = Color.BLUE
+        strokeWidth = 2f
+        style = Paint.Style.STROKE
+    }
+    
+    private var amplitudes = FloatArray(0)
+    
+    fun updateAmplitudes(newAmplitudes: FloatArray) {
+        amplitudes = newAmplitudes
+        invalidate()
+    }
+    
+    override fun onDraw(canvas: Canvas) {
+        super.onDraw(canvas)
+        
+        val width = width.toFloat()
+        val height = height.toFloat()
+        val centerY = height / 2
+        
+        if (amplitudes.isEmpty()) return
+        
+        val barWidth = width / amplitudes.size
+        
+        amplitudes.forEachIndexed { index, amplitude ->
+            val x = index * barWidth
+            val barHeight = amplitude * centerY
+            
+            canvas.drawLine(
+                x, centerY - barHeight,
+                x, centerY + barHeight,
+                paint
+            )
         }
+    }
+}
 
+class YouTubeUploader(private val credential: GoogleAccountCredential) {
+    
+    private val youtube = YouTube.Builder(
+        NetHttpTransport(),
+        GsonFactory.getDefaultInstance(),
+        credential
+    ).setApplicationName("PodMaster").build()
+    
+    suspend fun uploadPodcast(
+        file: File,
+        title: String,
+        description: String,
+        progressCallback: (Int) -> Unit
+    ): Result<String> = withContext(Dispatchers.IO) {
         try {
-            context.startActivity(shareIntent)
+            // Implementation here
+            Result.success("videoId")
         } catch (e: Exception) {
-            val chooser = Intent.createChooser(shareIntent, "Upload podcast to")
-            context.startActivity(chooser)
+            Result.failure(e)
         }
     }
 }

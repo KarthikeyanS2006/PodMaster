@@ -77,6 +77,25 @@ dependencies {
 
     // Preferences
     implementation("androidx.preference:preference-ktx:1.2.1")
+    implementation("ai.picovoice:koala-android:2.0.2")
+
+    implementation("com.cleveroad:audiovisualization:1.0.0")
+    // Or use compose-audiowaveform for Jetpack Compose
+    implementation("io.github.lincollincol:compose-audiowaveform:1.1.0")
+    
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+    implementation("com.google.firebase:firebase-storage-ktx")
+
+    implementation("com.google.apis:google-api-services-youtube:v3-rev20240916-2.0.0")
+    implementation("com.google.api-client:google-api-client-android:2.7.0")
+
+    // Add missing dependencies
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.spotify.android:auth:2.1.1")
+    implementation("com.spotify.android:spotify-player:2.1.0")
+    
+    // FFmpeg support
+    implementation("com.arthenica:mobile-ffmpeg-full:4.4.LTS")
 
     // Testing - Using version catalog
     testImplementation(libs.junit)

@@ -1,267 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
+    android:layout_height="match_parent"nt"
     android:background="?attr/colorSurface">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
+    <com.google.android.material.appbar.AppBarLayoutoogleapis.extensions.android.gms.auth.GoogleAccountCredential
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:layout_height="wrap_content"(t_height="wrap_content"
+        android:background="?attr/colorPrimary">kground="?attr/colorPrimary">
+    attrs: AttributeSet? = null,.Dispatchers
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar") {
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
 
-        <!-- Header Card -->
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/headerCard"
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="?attr/colorSurface">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            android:backgroundTint="?attr/colorPrimary"
-            app:layout_constraintTop_toTopOf="parent">
+            android:padding="20dp">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <!-- Header Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/headerCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="24dp">
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="?attr/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <!-- App Title -->
-                <TextView
-                    android:id="@+id/tvTitle"
-                    android:layout_width="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="🎙️ PodMaster"
-                    android:textSize="32sp"
-                    android:textStyle="bold"
+                    android:padding="24dp">
+
+                    <!-- App Title -->
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎙️ PodMaster"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvSubtitle"mp * centerY        } amplitudes.forEachIndexed { index, amp ->                paint               x, centerY + barHeight,   val barWidth = w / amplitudes.size                x, centerY - barHeight,al centerY = h / 2f            canvas.drawLine( = height.toFloat()            .toFloat()            val barHeight = amplitude * centerY      amplitudes.forEachIndexed { index, amplitude ->         fun onDraw(canvas: Canvas) {        val barWidth = width / amplitudes.size2oFloat()val width = width.toFloat()nDraw(canvas)es    override fun onDraw(canvas: Canvas) {s: FloatArray) {    newAmplitudes   fun updateAmplitudes(newAmplitudes: FloatArray) {    while (list.size > maxSize) list.removeAt(0)       list.add(value.coerceIn(0f, 1f))    private var amplitudes = FloatArray(0)mplitudes.toMutableList()    style = Paint.Style.STROKEfun addAmplitude(value: Float) {        strokeWidth = 2fitudes = FloatArray(0)    private val paint = Paint().apply {yleAttr) {ue    defStyleAttr: Int = 0  attrs: AttributeSet? = null,context, R.color.waveform_line)    context: Context,private val linePaint = Paint().apply {class WaveformView @JvmOverloads constructor(/actionBarSize"
+                        android:layout_width="wrap_content"ity calls it.y.MaterialComponents.Dark.ActionBar"/>
+                        android:layout_height="wrap_content"and use YouTube Data API.
+                        android:text="Professional Podcast Studio"
+                        android:textSize="14sp"ng, description: String = "") {
+                        android:textColor="#CCFFFFFF"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle"PI upload.rent"
+                        app:layout_constraintStart_toStartOf="parent" />utePath} with title: $title")
+                // Show a simple notification/log; actual upload would need OAuth/GoogleAccountCredentialid:background="?attr/colorSurface">
+                    <!-- My Recordings Button -->
+                    <com.google.android.material.button.MaterialButtonraintLayout
+                        android:id="@+id/btnViewRecordings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Files"MaterialCardView
+                        android:textColor="?attr/colorPrimary"
+                        app:icon="@android:drawable/ic_menu_view"
+                        app:iconTint="?attr/colorPrimary"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        app:backgroundTint="@android:color/white"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+                    android:layout_height="wrap_content"
+            <!-- Status Card -->ing="24dp">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/statusCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"h="wrap_content"
+                app:cardElevation="4dp"height="wrap_content"
+                android:layout_marginTop="20dp"ster"
+                app:layout_constraintTop_toBottomOf="@id/headerCard">
+                        android:textStyle="bold"
+                <LinearLayoutid:textColor="@android:color/white"
+                    android:layout_width="match_parent"f="parent"
+                    android:layout_height="wrap_content"rtOf="parent" />
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">btitle"
+                        android:layout_width="wrap_content"
+                    <!-- Status Icon -->eight="wrap_content"
+                    <TextViewid:text="Professional Podcast Studio"
+                        android:id="@+id/tvStatusIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⏸️"aintTop_toBottomOf="@id/tvTitle"
+                        android:textSize="48sp" />_toStartOf="parent" />
+
+                    <!-- Status Text -->utton -->
+                    <TextViewle.android.material.button.MaterialButton
+                        android:id="@+id/tvStatus"cordings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ready to record"
+                        android:textSize="18sp"r/colorPrimary"
+                        android:textStyle="bold"ble/ic_menu_view"
+                        android:layout_marginTop="8dp"ry"
+                        android:textColor="?attr/colorOnSurface" />tedButton"
+                        app:backgroundTint="@android:color/white"
+                    <!-- Timer -->_constraintTop_toTopOf="parent"
+                    <TextViewayout_constraintEnd_toEndOf="parent" />
+                        android:id="@+id/tvTimer"
+                        android:layout_width="wrap_content"ntLayout>
+                        android:layout_height="wrap_content"iew>
+                        android:text="00:00:00"
+                        android:textSize="56sp"
+                        android:textStyle="bold"terialCardView
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="16dp"
+                        android:textColor="?attr/colorPrimary" />
+                app:cardCornerRadius="16dp"
+                </LinearLayout>on="4dp"
+            </com.google.android.material.card.MaterialCardView>
+                app:layout_constraintTop_toBottomOf="@id/headerCard">
+            <!-- Waveform Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/waveformCard"h_parent"
+                android:layout_width="match_parent"tent"
+                android:layout_height="140dp"ical"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"nter">
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/statusCard">
+                    <TextView
+                <com.podmaster.ui.WaveformViewIcon"
+                    android:id="@+id/waveformView"_content"
+                    android:layout_width="match_parent"tent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black" />
+
+            </com.google.android.material.card.MaterialCardView>
+                    <TextView
+            <!-- Control Buttons -->@+id/tvStatus"
+            <LinearLayoutndroid:layout_width="wrap_content"
+                android:id="@+id/controlLayout"wrap_content"
+                android:layout_width="match_parent"rd"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"arginTop="8dp"
+                android:layout_marginTop="32dp"r/colorOnSurface" />
+                app:layout_constraintTop_toBottomOf="@id/waveformCard">
+                    <!-- Timer -->
+                <!-- Pause Button -->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabPause"wrap_content"
+                    android:layout_width="wrap_content"tent"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_media_pause"
+                    android:contentDescription="Pause"
+                    android:visibility="gone"onospace"
+                    app:tint="@android:color/white"6dp"
+                    app:backgroundTint="#FFA726"/colorPrimary" />
+                    android:layout_marginEnd="16dp" />
+                </LinearLayout>
+                <!-- Record Button (Large Center) -->alCardView>
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/fabRecord"
+                    android:layout_width="wrap_content"ardView
+                    android:layout_height="wrap_content"
+                    android:text="START RECORDING""
+                    app:icon="@android:drawable/ic_btn_speak_now"
+                    android:contentDescription="Record"
+                    app:backgroundTint="?attr/colorPrimary"
                     android:textColor="@android:color/white"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/tvSubtitle"
-                    android:layout_width="wrap_content"
+                    app:iconTint="@android:color/white"d/statusCard">
+                    android:textStyle="bold" />
+                <com.podmaster.views.WaveformView
+                <!-- Stop Button -->/waveformView"
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabStop"tch_parent"
+                    android:layout_width="wrap_content"black" />
                     android:layout_height="wrap_content"
-                    android:text="Professional Podcast Studio"
-                    android:textSize="14sp"
-                    android:textColor="#CCFFFFFF"
-                    android:layout_marginTop="4dp"
-                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <!-- My Recordings Button -->
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnViewRecordings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="My Files"
-                    android:textColor="?attr/colorPrimary"
-                    app:icon="@android:drawable/ic_menu_view"
-                    app:iconTint="?attr/colorPrimary"
-                    style="@style/Widget.Material3.Button.ElevatedButton"
-                    app:backgroundTint="@android:color/white"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Status Card -->
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/statusCard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="4dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/headerCard">
-
-            <LinearLayout
+                    android:src="@android:drawable/ic_media_pause"
+                    android:contentDescription="Stop"
+                    android:visibility="gone"
+                    app:tint="@android:color/white"
+                    app:backgroundTint="@android:color/holo_red_dark"
+                    android:layout_marginStart="16dp" />
+                android:layout_height="wrap_content"
+            </LinearLayout>entation="horizontal"
+                android:gravity="center"
+            <!-- Process Button -->inTop="32dp"
+            <com.google.android.material.button.MaterialButtonormCard">
+                android:id="@+id/btnProcessAudio"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp"
-                android:gravity="center">
-
-                <!-- Status Icon -->
-                <TextView
-                    android:id="@+id/tvStatusIcon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="⏸️"
-                    android:textSize="48sp" />
-
-                <!-- Status Text -->
-                <TextView
-                    android:id="@+id/tvStatus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ready to record"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:textColor="?attr/colorOnSurface" />
-
-                <!-- Timer -->
-                <TextView
-                    android:id="@+id/tvTimer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="00:00:00"
-                    android:textSize="56sp"
-                    android:textStyle="bold"
-                    android:fontFamily="monospace"
-                    android:layout_marginTop="16dp"
-                    android:textColor="?attr/colorPrimary" />
-
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Waveform Card -->
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/waveformCard"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="4dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/statusCard">
-
-            <com.podmaster.views.WaveformView
-                android:id="@+id/waveformView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/black" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Control Buttons -->
-        <LinearLayout
-            android:id="@+id/controlLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@id/waveformCard">
-
-            <!-- Pause Button -->
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabPause"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_media_pause"
-                android:contentDescription="Pause"
-                android:visibility="gone"
-                app:tint="@android:color/white"
-                app:backgroundTint="#FFA726"
-                android:layout_marginEnd="16dp" />
-
-            <!-- Record Button (Large Center) -->
-            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/fabRecord"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="START RECORDING"
-                app:icon="@android:drawable/ic_btn_speak_now"
-                android:contentDescription="Record"
+                android:layout_height="60dp".floatingactionbutton.FloatingActionButton
+                android:text="✨ Enhance Audio Quality"
+                android:textSize="16sp"h="wrap_content"
+                android:textStyle="bold"t="wrap_content"
+                android:visibility="gone":drawable/ic_media_pause"
+                android:layout_marginTop="32dp""Pause"
+                app:cornerRadius="30dp""gone"
                 app:backgroundTint="?attr/colorPrimary"
                 android:textColor="@android:color/white"
-                app:iconTint="@android:color/white"
-                android:textStyle="bold" />
+                app:layout_constraintTop_toBottomOf="@id/controlLayout" />
 
-            <!-- Stop Button -->
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabStop"
-                android:layout_width="wrap_content"
+            <!-- Progress Bar -->n (Large Center) -->
+            <ProgressBargle.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/progressBar"d"
+                style="@style/Widget.Material3.CircularProgressIndicator"
+                android:layout_width="wrap_content"tent"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_media_pause"
-                android:contentDescription="Stop"
+                android:visibility="gone"awable/ic_btn_speak_now"
+                app:indicatorColor="?attr/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@id/btnProcessAudio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <!-- Export Button -->->
+            <com.google.android.material.button.MaterialButtonton.FloatingActionButton
+                android:id="@+id/btnExport"p"
+                android:layout_width="match_parent"ent"
+                android:layout_height="60dp"rap_content"
+                android:text="📤 Share Recording"e/ic_media_pause"
+                android:textSize="16sp"ription="Stop"
+                android:textStyle="bold"gone"
+                android:visibility="gone"lor/white"
+                android:layout_marginTop="16dp"d:color/holo_red_dark"
+                app:cornerRadius="30dp"inStart="16dp" />
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="?attr/colorPrimary"
+                app:strokeWidth="2dp"
+                android:textColor="?attr/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@id/progressBar" />
+                android:id="@+id/btnProcessAudio"
+            <!-- Upload Options -->h="match_parent"
+            <LinearLayoutayout_height="60dp"
+                android:id="@+id/uploadLayout"Quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone""32dp"
+                app:layout_constraintTop_toBottomOf="@id/btnExport"
+                android:layout_marginTop="16dp">rimary"
+                android:textColor="@android:color/white"
+                <com.google.android.material.button.MaterialButtonyout" />
+                    android:id="@+id/btnUploadSpotify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Spotify"ial3.CircularProgressIndicator"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    android:layout_marginEnd="8dp"t"
+                    app:backgroundTint="#1DB954"
+                    android:textColor="@android:color/white" />
+                app:layout_constraintTop_toBottomOf="@id/btnProcessAudio"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUploadYouTube"nt"
+                    android:layout_width="0dp"" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YouTube"utton.MaterialButton
+                    app:icon="@android:drawable/ic_menu_upload"
+                    android:layout_marginStart="8dp"
+                    app:backgroundTint="#FF0000"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>tSize="16sp"
+                android:textStyle="bold"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_marginTop="16dp"
+    </ScrollView>pp:cornerRadius="30dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+                app:strokeWidth="2dp"
+                android:textColor="?attr/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+            <!-- Upload Options -->
+            <LinearLayout
+                android:id="@+id/uploadLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:visibility="gone"
-                app:tint="@android:color/white"
-                app:backgroundTint="@android:color/holo_red_dark"
-                android:layout_marginStart="16dp" />
+                app:layout_constraintTop_toBottomOf="@id/btnExport"
+                android:layout_marginTop="16dp">
 
-        </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUploadSpotify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Spotify"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    android:layout_marginEnd="8dp"
+                    app:backgroundTint="#1DB954"
+                    android:textColor="@android:color/white" />
 
-        <!-- Process Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnProcessAudio"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="✨ Enhance Audio Quality"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:visibility="gone"
-            android:layout_marginTop="32dp"
-            app:cornerRadius="30dp"
-            app:backgroundTint="?attr/colorPrimary"
-            android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/controlLayout" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUploadYouTube"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YouTube"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    android:layout_marginStart="8dp"
+                    app:backgroundTint="#FF0000"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
 
-        <!-- Progress Bar -->
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="@style/Widget.Material3.CircularProgressIndicator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:indicatorColor="?attr/colorPrimary"
-            app:layout_constraintTop_toBottomOf="@id/btnProcessAudio"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Export Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnExport"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="📤 Share Recording"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:visibility="gone"
-            android:layout_marginTop="16dp"
-            app:cornerRadius="30dp"
-            style="@style/Widget.Material3.Button.OutlinedButton"
-            app:strokeColor="?attr/colorPrimary"
-            app:strokeWidth="2dp"
-            android:textColor="?attr/colorPrimary"
-            app:layout_constraintTop_toBottomOf="@id/progressBar" />
+    </ScrollView>
 
-        <!-- Upload Options -->
-        <LinearLayout
-            android:id="@+id/uploadLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/btnExport"
-            android:layout_marginTop="16dp">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnUploadSpotify"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Spotify"
-                app:icon="@android:drawable/ic_menu_upload"
-                android:layout_marginEnd="8dp"
-                app:backgroundTint="#1DB954"
-                android:textColor="@android:color/white" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnUploadYouTube"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="YouTube"
-                app:icon="@android:drawable/ic_menu_upload"
-                android:layout_marginStart="8dp"
-                app:backgroundTint="#FF0000"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

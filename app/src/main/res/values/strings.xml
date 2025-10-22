@@ -1,3 +1,10 @@
+package com.podmasterncoding="utf-8"?>.podmaster
 <resources>
-    <string name="app_name">PodMaster</string>
-</resources>
+import android.app.ApplicationdMaster</string>id.app.Applicationimport com.google.firebase.FirebaseAppclass PodMasterApp : Application() {    override fun onCreate() {        super.onCreate()        FirebaseApp.initializeApp(this)    }}
+import com.google.firebase.FirebaseApp
+
+class PodMasterApp : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        FirebaseApp.initializeApp(this)failed">Failed to download audio</string>    <string name="download_success">Audio downloaded successfully</string>    <string name="upload_failed">Failed to upload audio</string>    <string name="upload_success">Audio uploaded successfully</string>
+    }

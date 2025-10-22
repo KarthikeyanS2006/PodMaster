@@ -90,8 +90,15 @@ class MainActivity : AppCompatActivity() {
         spotifyUploader = SpotifyUploader(this)
         youtubeUploader = YouTubeUploader(this)
 
+        setupToolbar()
         checkPermissions()
-        setupClickListeners()
+        initializeManagers()
+        setupUI()
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun checkPermissions() {
@@ -110,7 +117,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupClickListeners() {
+    private fun initializeManagers() {
+        // Initialize your managers here
+    }
+
+    private fun setupUI() {
         binding.fabRecord.setOnClickListener {
             if (!isRecording) {
                 startRecording()

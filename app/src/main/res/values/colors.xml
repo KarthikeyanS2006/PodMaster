@@ -30,4 +30,20 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="error_red">#D32F2F</color>
+
+    <color name="primary">#FF5722</color> <!-- Orange 500 -->
+    <color name="primary_dark">#E64A19</color> <!-- Orange 700 -->
+    <color name="primary_light">#FFCCBC</color> <!-- Orange 100 -->
+    <color name="accent">#FFFFFF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    
+    <!-- Waveform colors -->
+    <color name="waveform_background">#FFFFFF</color>
+    <color name="waveform_line">#FF5722</color>
+    <color name="waveform_selected">#E64A19</color>
 </resources>

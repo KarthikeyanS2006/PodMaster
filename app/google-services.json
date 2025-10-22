@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "600604344103",
+    "project_id": "podmaster-8cff9",
+    "storage_bucket": "podmaster-8cff9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600604344103:android:6facf3c2fe54380e6eb302",
+        "android_client_info": {
+          "package_name": "com.podmaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSb61GIfuQ2exatKBBFhV7ObFWKyVuwQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
